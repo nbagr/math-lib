@@ -6,13 +6,13 @@ def sum(*args):
 
 
 def multiply(*args):
-    return reduce(lambda acc, item: acc * item, args, 0)
+    return reduce(lambda acc, item: acc * item, args, 1)
 
 
-def divide(*args):
+def divide(number, *args):
     if 0 in args:
-        raise ValueError('Can\'t divide by zero')
-    return reduce(lambda acc, item: acc / item, args[1:], args[0])
+        return None
+    return reduce(lambda acc, item: acc / item, args, number)
 
 
 def subtraction(*args):

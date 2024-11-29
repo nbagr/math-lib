@@ -2,6 +2,8 @@ from functools import reduce
 
 
 def max(collection):
+    if len(collection) == 0:
+        return None
     max_element = collection[0]
     for item in collection[1:]:
         if item > max_element:
@@ -10,18 +12,24 @@ def max(collection):
 
 
 def min(collection):
+    if len(collection) == 0:
+        return None
     min_element = collection[0]
     for item in collection[1:]:
-        if item > min_element:
+        if item < min_element:
             min_element = item
     return min_element
 
 
 def average(collection):
+    if len(collection) == 0:
+        return None
     return reduce(lambda acc, item: acc + item, collection, 0) / len(collection)
 
 
 def sort(collection):
+    if len(collection) == 0:
+        return None
     steps_count = len(collection) - 1
     swapped = True
 

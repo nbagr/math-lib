@@ -17,4 +17,10 @@ package-uninstall:
 	python3 -m pip uninstall dist/*.whl
 
 lint:
-	poetry run flake8 scripts
+	poetry run flake8 scripts tests
+
+test:
+	poetry run pytest
+
+test-coverage:
+	poetry run pytest --cov
