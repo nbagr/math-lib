@@ -1,4 +1,4 @@
-# math-lib
+# Math library
 
 [![Python CI](https://github.com/nbagr/math_lib/actions/workflows/check.yaml/badge.svg)](https://github.com/nbagr/math_lib/actions/workflows/check.yaml)
 
