@@ -1,4 +1,4 @@
-from scripts.arithmetic import sum, multiply, divide, subtraction
+from scripts.arithmetic import sum, divide, subtraction, multiply, factorial
 
 
 def test_sum():
@@ -31,3 +31,10 @@ def test_multiply():
     assert multiply(-1, -6, -50) == -300
     assert multiply(16, 0) == 0
     assert multiply(28, 1) == 28
+
+
+def test_factorial():
+    assert factorial(5) == 120
+    assert factorial(6) == 720
+    assert factorial(0) == 1
+    assert factorial(1) == 1
