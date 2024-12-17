@@ -1,9 +1,12 @@
 [tool.poetry]
-name = "math-lib"
+name = "math_lib"
 version = "0.1.0"
-description = "This is math-lib"
+description = "Library with simple mathematical functions"
 authors = ["nbagr <86910204+nbagr@users.noreply.github.com>"]
 readme = "README.md"
+packages = [
+  { include = "scripts" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.12"
